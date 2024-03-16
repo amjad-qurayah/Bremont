@@ -2,41 +2,24 @@
 
 
 This project is a python script utilizes Selenium and BeautifulSoup to scrape watch data from the Bremont website. 
+The script utilizes a headless Chrome browser for scraping.
+User agent randomization is implemented to mimic real browser behavior and avoid website blocking.
+Error handling is included to gracefully handle potential exceptions during the scraping process.
+Data cleaning and formatting steps are applied to the extracted data.
+This script provides a basic framework for scraping watch data from the Bremont website. 
 
-Data Extracted:
-Reference number
-Watch URL
-Brand
-Nickname
-Marketing name
-Currency and price
-Image URL
-Parent model
-Case material
-Case back
-Crystal
-Water resistance
-Weight
-Dial color
-Numerals
-Movement
-Caliber
-Power reserve
-Frequency
-Jewels
-Features
-Description
-Short description
+Data Exracted :reference_number, watch_URL, type, brand, year_introduced, parent_model, specific_model, nickname, marketing_name, style, currency, price, image_URL, made_in, case_shape, case_material, case_finish, caseback, diameter, between_lugs, lug_to_lug, case_thickness, bezel_material, bezel_color, crystal, water_resistance, weight, dial_color, numerals, bracelet_material, bracelet_color, clasp_type, movement, caliber, power_reserve, frequency, jewels, features, description, short_description
+
 -----------------------
 This project will:
 ﻿﻿Run your Python script on an AWS EC2 instance
 ﻿﻿Automate Python script using CRON
 ﻿﻿Run your Python script in a Docker container
-
+------------------
 init.sh file:
 This script automates the setup process for a Python environment that utilizes Selenium with ChromeDriver for web automation tasks.
 
-------------------------
+-------------------
 src directry :
    contains python scripts and data folder to save the excuted csv files  
    note : each collection link is scraped indvisually because there were challenges in making loop through the kinks 
